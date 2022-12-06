@@ -9,6 +9,7 @@ class HmeEmailOrigin(Enum):
 
     SAFARI = "SAFARI"
     ON_DEMAND = "ON_DEMAND"
+    MAIL = "MAIL"
 
 
 class HmeEmail(t.NamedTuple):
