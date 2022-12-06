@@ -36,8 +36,8 @@ class HmeEmail(t.NamedTuple):
             hme=data["hme"],
             label=data["label"],
             note=data["note"],
-            create_timestamp=data["createTimestamp"],
-            is_active=data["isActive"],
+            create_timestamp=int(data["createTimestamp"]),
+            is_active=bool(data["isActive"]),
             recipient_mail_id=data["recipientMailId"],
         )
 
